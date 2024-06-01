@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        .card{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        h2, h1 {
+            color: #ff6347;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .section {
+            display: none;
+        }
+        video { 
+             width: 100%; max-width: 560px; 
+             border-radius: 10px; margin-top: 20px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hi, Xandra! My Diary Cream...</h2>
+        <p>Click yes if you want this to continue, otherwise, no.</p>    
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+
+        <section id="Yes" class="section">
+            <h1>Yay, you really want to continue this one, ha!</h1>
+       <div class="card">
+            <p>Happy Birthday! 🎉</p>
+            <p>It's hard to believe that we've known each other for over 4 years now. Time flies, doesn't it? I never imagined that I would have such a long-lasting friendship, especially since I'm the type to keep my distance to avoid the pain of unmet expectations and responsibilities. But you broke through all that, and you've been by my side ever since. I am so grateful to have you as my closest internet friend.</p>
+            <p>I created this little surprise for you. I hope it brings a smile to your face and adds a bit of joy to your special day. </p>
+            <p>With all our best wishes, your once upon  a time fg partner HAHAHA, and your anak, kaz.</p
+            
+         </div> 
+         <video controls>
+                <source src="kaz.mp4" type="video/mp4">
+            
+            </video>
+
+        </section>
+       
+        <section id="No" class="section">
+            <h1>Na-ah, wala kang takas sa akin. Click yes na😤</h1>
+            </section>
+    </div>
+    
+    <script>
+        var yesButton = document.getElementById("yesButton");
+        var noButton = document.getElementById("noButton");
+        var sectionYes = document.getElementById("Yes");
+        var sectionNo = document.getElementById("No");
+
+        yesButton.addEventListener("click", function() {
+            sectionYes.style.display = "block";
+            sectionNo.style.display = "none";
+        });
+
+        noButton.addEventListener("click", function() {
+            sectionNo.style.display = "block";
+            sectionYes.style.display = "none";
+        });
+    </script>
+</body>
+</html>
+  
